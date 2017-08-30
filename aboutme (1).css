@@ -1,0 +1,60 @@
+        h1 {
+            color: black
+        }
+            body {
+                background-color: DarkRed
+                }
+    
+                 
+                h3 {
+                 border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+                  color: rgba(255, 255, 255, 0.5);
+                  font-weight: 100;
+                  font-family: Roboto, sans-serif;
+                  font-size: 22px;
+                  font-style: italic;
+                  letter-spacing:0.02em;
+                  line-height: 24px;
+                  padding-bottom: 30px;
+                  text-align: left;
+                  width: 70%;
+                  word-spacing: 0.05em;
+                  text-align: center;
+                    }
+            
+                        h5 {
+                            font-size: 20px;
+                            color: Firebrick;
+                          }
+        
+                                h1 { 
+                                    font-size: 50px;
+                                    background-color: white;
+                                    
+                                 }
+                                        
+                                    p {
+                                        font-size: 18px;
+                                        color: #FFA500;
+                                        font-family: 'Indie Flower', cursive;
+                                        background-color: rgb( 0, 0, 0);
+                                     }
+                                     
+                                li{
+                                      font-weight: 100;
+                                      font-family: Roboto, sans-serif ;
+                                      font-size: 22px;
+                                      font-style: bold;
+                                      color: rgb(128, 128, 128);
+                                      background-color: rgb(225, 255, 255);
+                                       }
+              
+                                  ol{
+                  
+                              background-color: black;
+                              }
+
+              
+              
+              
+              
