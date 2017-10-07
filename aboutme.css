@@ -1,0 +1,127 @@
+                
+                
+    
+                 
+                h3 {
+                 border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+                  color: rgba(255, 255, 255, 0.5);
+                   font-weight: 100;
+                    font-family: Roboto, sans-serif;
+                     font-size: 22px;
+                     font-style: italic;
+                      letter-spacing:0.02em;
+                     line-height: 24px;
+                     padding-bottom: 30px;
+                    text-align: center;
+                   width: 70%;
+                  word-spacing: 0.05em;
+                
+                   }
+            
+               h5 {
+                    font-size: 20px;
+                    color: Red;
+                    
+                    }
+    
+               h1 { 
+                    color: Firebrick;
+                    font-size: 50px;
+                   background-color: black;
+                    text-align: center;
+                     font-family: 'Indie Flower', cursive;
+                     padding-top: 0px;
+                      border-style: solid;
+                      border-left-width: 4px
+                       
+                      
+                    }
+                                        
+               p {
+                   font-size: 25px;
+                     color: Firebrick;
+                     font-family: 'Indie Flower', cursive;
+              
+                   text-align: left
+                    
+                   }
+                                     
+               li{
+                  font-weight: 100;
+                   font-family: Roboto, sans-serif ;
+                    font-size: 50px;
+                    font-style: italic;
+                   color: Firebrick;
+                  
+                  
+                   }
+              
+               ol{
+                 
+                 color: Firebrick;
+                  padding: 20px 12%;
+                  }
+    
+                div{
+                margin-right: 15%;
+                margin-left: 15%;
+                }
+                    
+                
+                 h2, p {
+                  color: Firebrick;
+                    }
+                    
+            
+                    
+                    img{
+                        border-radius: 50%;
+                        
+                        margin:auto
+                        display: block;
+                    }
+                        
+                    
+                    li{
+                        color: white;
+                        font-size: 40px;
+                    }
+              
+                     li:visit{
+                        color: gray;
+                    }
+                  
+                      
+                       .topics:hover{
+                        color: yellow;
+                        font-size: 40px; 
+                        
+                      }
+                    
+                  .w3-round{
+                      border-color: white;
+                      border-style: solid;
+                  }
+                  
+                  .nav a {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 14px;
+    text-decoration: none;
+    font-size: 30px;
+    font-style: italic ;
+    background-color:white;
+    width:100%;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3MhWDC5UGiDeBqL5jLSaFV6lFkJMMw7aDCoDnAJ08JVSTDfVW);
+    background-position: center;
+                  }
+                  
+                  
+                  
+                  
+              
+              
+              
+              
