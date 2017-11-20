@@ -1,0 +1,70 @@
+
+        body{
+         background-image: url("https://media.licdn.com/mpr/mpr/AAEAAQAAAAAAAALVAAAAJDI0NzdjMjM1LTcxYmMtNDI3OS1iMTllLWRjNzhkN2RiZTcwOQ.jpg");
+     
+    
+        }
+
+     .text-primary{
+     background-color: white;
+        border-style:solid ;
+            border-color:blue;
+              font-size: 50px;
+               font-style: italic;
+               font-family: 'Cinzel', serif;
+               }
+           
+                
+
+         .thick-green-border {
+            border-color: black;
+               border-width: 10px;
+                 border-style: solid;
+                    border-radius: 50%;
+                      }
+    
+
+        p {
+        font-family: 'Cinzel', serif;
+        text-align: center;
+         font-size: 30px;
+          background-color: white;
+            color: red;
+             border-style:solid ;
+               border-color:blue;
+                    
+                     }
+                     
+                     
+        
+        
+    li {
+         font-family: 'Cinzel', serif;
+            text-align:center;
+                font-size: 20px;
+                    font-style: italic;
+                        background-color: white;
+                        
+                     }
+    
+    .img-thumbnail{
+        border-style: solid;
+        border-width: 10px;
+        width: 500px;
+        height: 800px;
+        float: right;
+        text-align: justify;
+        
+    }
+    
+    h3{
+     color: red;   
+        text-align: right;
+        background-color: white;
+        border: solid;
+        border-color: blue;
+        font-style: italic;
+        font-family: 'Cinzel', serif;
+    }
+      
+     
