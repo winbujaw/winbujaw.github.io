@@ -1,0 +1,24 @@
+h1, h2, h3, h4 {
+    color:Black;
+    background-color: white;
+    font-family: "Courier New", Courier, monospace	;
+}
+
+ h1{
+     font-size: 100px;
+     color: red;
+     text-align: center;
+     border-style: solid;
+     border-color: black;
+     padding: 133px ;
+     background-image: url("http://www.thelogofactory.com/wp-content/uploads/2015/09/adidas-logo.png");
+ }
+
+
+.img1, .img2, .img3, .img4{
+   width: 400px;
+   height: 300px;
+}
+
+    
+
