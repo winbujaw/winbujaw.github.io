@@ -23,7 +23,7 @@
         
         //CALCULATE
         var total = number1 * 375 + number2 * 375 + number3 * 375 + number4 * 375 * 1.07;
-        var tax = 1.07;
+        var tax = -(number1 * 375 + number2 * 375 + number3 * 375 + number4 * 375) + (number1 * 375 + number2 * 375 + number3 * 375 + number4 * 375 * 1.07);
         var subtotal = number1 * 375 + number2 * 375 + number3 * 375 + number4 * 375;
         //OUTPUT
        $(".total").css("font-size","32px");
