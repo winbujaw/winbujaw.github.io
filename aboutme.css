@@ -102,26 +102,31 @@
                       border-color: white;
                       border-style: solid;
                   }
+
+    .nav a {
+        float: left;
+        display: block;
+        color: black;
+        text-align: center;
+        text-decoration: none;
+        font-size: 30px;
+        font-style: italic ;
+        background-color:white;
+        width:100%;
+        background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3MhWDC5UGiDeBqL5jLSaFV6lFkJMMw7aDCoDnAJ08JVSTDfVW);
+        background-position: center;
+
                   
-                  .nav a {
-    float: left;
-    display: block;
-    color: black;
+}
+                  
+              
+              .aboutme.html {
     text-align: center;
-    padding: 14px 14px;
-    text-decoration: none;
-    font-size: 30px;
-    font-style: italic ;
-    background-color:white;
-    width:100%;
-    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3MhWDC5UGiDeBqL5jLSaFV6lFkJMMw7aDCoDnAJ08JVSTDfVW);
-    background-position: center;
-                  }
-                  
-                  
-                  
-                  
-              
-              
-              
+}
+
+}
+
+    .border{border:2px solid black;}
+
+
               
