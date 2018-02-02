@@ -1,0 +1,30 @@
+.q1, .q2, .q3, .q4, .q5, .q6 .q1-choice, .q2-choice, .q3-choice, .q4-choice, .q5-choice, .q6-choice {
+    display: none;
+}
+body {
+    background-image: url("https://images.alphacoders.com/180/180461.jpg");
+
+
+background-size:cover;
+
+   
+    color: firebrick;
+    font-family:  'Indie Flower';
+}
+.sidebar {
+    color:firebrick;
+}
+ol {
+    color: firebrick;
+    font-size: 20px;
+}
+h1 {
+    font-size: 100px;
+    color: firebrick;
+    font-family: 'Alegreya';
+
+}
+h3 {
+    font-size: 30px;
+}
+
