@@ -1,0 +1,26 @@
+body {
+    margin: 10%;
+    margin-top: 5%;
+    background: #a2b9bc;
+}
+h1 {
+    color: #9E5236;
+}
+h5 {
+    color: #6b5b95;
+    font-size: 24px;
+}
+h4 {
+    color: #878f99;
+}
+button {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    background: #b2ad7f;
+    color:#2D4968;
+}
+button:hover {
+    color: white;
+    background:#6b5b95;
+}
