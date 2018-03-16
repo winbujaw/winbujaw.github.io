@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <title>The WereSquirrel</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="http://eloquentjavascript.net/code/jacques_journal.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Boogaloo|Kalam|Rubik+Mono+One" rel="stylesheet">
+        <script src="weresquirrel.js" type="text/javascript" charset="utf-8"></script>
+        <link href="weresquirrel.css" rel="stylesheet" type="text/css">
+    </head>
+
+    <body>
+         <h1>Jacques and the Weresquirrel</h1>
+         <h5><em>adapted from Eloquent Javascript by Marijn Haverbeke</em></h5>
+        <div class='story'>
+            <p id="firstP">Every now and then, usually between eight and ten in the evening, Jacques finds himself transforming into a small furry rodent with a bushy tail.
+                <br>
+            </p>
+            <p>On one hand, Jacques is quite glad that he doesn’t have classic lycanthropy. Turning into a squirrel tends to cause fewer problems than turning into a wolf. Instead of having to worry about accidentally eating the neighbor (that would be awkward),
+                he worries about being eaten by the neighbor’s cat. After two occasions where he woke up on a precariously thin branch in the crown of an oak, naked and disoriented, he has taken to locking the doors and windows of his room at night and
+                putting a few walnuts on the floor to keep himself busy.
+                <br>
+            </p>
+            <p>That takes care of the cat and oak problems. But Jacques still suffers from his condition. The irregular occurrences of the transformation make him suspect that they might be triggered by something. For a while, he believed that it happened
+                only on days when he had touched trees. So he stopped touching trees entirely and even avoided going near them. But the problem persisted.
+                <br>
+            </p>
+            <p>Switching to a more scientific approach, Jacques seeks out your help to sort out his squirrely disposition. It is up to you to find a cause for Jacques transformation and free him from this awkward predicament.
+                <br>
+            </p>
+        </div>
+        <div class='part1'><span class='heading'>PART 1</span>
+            <p class='part1'>You start by asking Jacques to keep a daily log of everything he did that day and whether he changed form. With this data you hope to narrow down the conditions that trigger the transformations. You decide it would be better to create a form
+                for Jacques to enter his information.</p>
+            <ol>
+                <li>Create two input boxes: one a drop-down, the other for text. Use Bootstrap form-control.</li>
+                <ul>
+                    <li>Label the first: "Squirrel?" and the options "Yes" or "No"</li>
+                    <li>Label the second: "What did I do?"</li>
+                </ul>
+                <li>Below the inputs, create 3 buttons in a button group</li>
+                <ul>
+                    <li>Label the first: "Remove Event"</li>
+                    <li>Label the second: "Add Event"</li>
+                    <li>Label the third: "Submit"</li>
+                </ul>
+                <li>Open the JS file included. Where indicated, add</li>
+                <ul>
+                    <li>a function to add a text input field whenever "Add Event" is clicked</li>
+                    <li>a function to remove the last input field added when "Remove Event" is clicked</li>
+                    <li>a function to add the contents of the input fields to an array named <code>testJournal</code> when "Submit" is clicked.</li>
+                </ul>
+                <li>Test your function by displaying the contents of <code>testJournal</code> in the output div below.</li>
+            </ol>
+
+            <form>
+                <select id="squirrel-option">
+                    <option>Yes</option>
+                    <option>No</option>
+                </select>
+                <input class="form-control text-box" type="text">
+                <div class="textbox"></div>
+                <div class="btn-group">
+                    <button type="button" class="removeevent">Remove Event</button>
+                    <button type="button" class="addevent">Add Event</button>
+                    <button type="button" class="submit">Submit</button>
+                </div>
+
+            </form>
+            <div class="displayTestJournal"></div>
+        </div>
+        <hr>
+        <div class='part2'><span class='heading'>PART 2</span>
+            <p class='part2'>You asked Jacques to keep track of his activities each day for 3 months. That's about 90 entries. Get to typing! <a href='http://eloquentjavascript.net/code/jacques_journal.js' target='_blank'>Here's the link for all the entries.</a>
+            </p>
+            <br>
+            <br>
+            <p class='part2'>Hopefully you didn't start typing. Hopefully you noticed that the file above is a JS file with an array <code>JOURNAL</code> already compiled and ready to go for you. The next part of our task is to complete a correlation analysis.</p>
+            <p class='part2'>A correlation analysis allows us to determine if two events are related. If the correlation is 1, or close to 1, then they have a positive correlation, which means if one happens then the other also happens. If the correlation is -1, or close
+                to -1, then they have a negative correlation; if one is false the other is true. For example: The more gasoline you put in your car, the farther it can go; Gas and Distance is a positive correlation. If a car decreases speed, travel time
+                to a destination increases; Speed and Travel time is a negative correlation. You decide to find some correlation between the different events and becoming a squirrel.</p>
+            <p class='part2'>You remember a correlation equation for true/false events. The equation is as follows:</p>
+            <table style="border-collapse: collapse; margin-left: 1em;">
+                <tbody>
+                    <tr>
+                        <td style="vertical-align: middle"><em>ϕ</em> =</td>
+                        <td style="padding-left: .5em">
+                            <div style="border-bottom: 1px solid black; padding: 0 7px;">n<sub>11</sub>n<sub>00</sub> - n<sub>10</sub>n<sub>01</sub>
+                            </div>
+                            <div style="padding: 0 7px;">√<span style="border-top: 1px solid black; position: relative; top: 2px;">
+              <span style="position: relative; top: -4px">n<sub>1•</sub>n<sub>0•</sub>n<sub>•1</sub>n<sub>•0</sub></span>
+                                </span>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <br>
+            <p class='part2'>You begin by computing the correlation of one event, pizza. You comb the <code>JOURAL</code>looking for all the "pizza" events and if Jacques turned into a squirrel. You will also look for all the times he turned and look to see if "pizza"
+                was present or if its not. The data looks like this:</p>
+            <img src="http://eloquentjavascript.net/img/pizza-squirrel.svg">
+            <p class='part2'>Now, let's understand this equation. The n is the table of the two events, so the picture above, the sub numbers are the events in order and 1 is true, 0 is false. So, n<sub>11</sub> is when squirrellness is true and pizza is true; n<sub>11</sub> =
+                1. In, n<sub>1•</sub>, the • means to ignore the event, n<sub>1•</sub> is the total when squirrel is true; n<sub>1•</sub> = 5.</p>
+            <p class='part2'>Using the table and the equation as a guide, calculate, by hand, ϕ. Put your answer below:</p>
+            <p class='part2'>ϕ = .076</p>
+
+        </div>
+        <hr>
+        <div class='part3'><span class='heading'>PART 3</span>
+            <p class='part3'>You are thinking that took forever. First all the counting, then making a table, then calculating. You decide to make the computer do all the work for you. You decide that n is a nuisance and you are going to forget about it. But those sub
+                numbers are peculiar: 00, 01, 10, 11. You start thinking that maybe instead of a table, you could use an array, where 00 is index 0, 01 index 1 ... and so on. (Binary anyone?)</p>
+            <p class='part3'>So now comes the exciting part of getting the computer to create the "table" (array) for you and calculate ϕ.</p>
+            <ol>
+                <li>Create a function to check for an event in the <code>JOURNAL</code> array.</li>
+                <li>Create a function that counts the occurences of events and squirrelness and returns a table with 4 values.</li>
+                <li>Create a function to calculate ϕ (phi) and accepts an array, namely the table, as a parameter.</li>
+                <li>Test your functions by displaying the table and ϕ (phi) of the event a user types in the input box below. Ex: If I type "pizza" in the input box, then [76, 9, 4, 1] = 0.068599434 would display.</li>
+            </ol>
+            <p class='part3'><span class="attention">Be sure to use all caps JOURNAL when referencing the full journal.</span>
+            </p>
+            <div class="form-group events">
+                <label for="eventPhi">Find ϕ for:</label>
+                <input type="text" class="form-control event" id="eventPhi">
+            </div>
+            <div class="displayPhi"></div>
+            <br>
+            <div class="btn-group buttons">
+                <button type="button" class="btn btn-dark calcPhi">Calculate</button>
+            </div>
+        </div>
+        <hr>
+        <div class='part4'><span class='heading'>PART 4</span>
+            <p class='part4'>You now have a way to calculate correlation values for each activity. But, with this current system, you would have to type in each activity, record the ϕ value and make sure you don't miss any activities. The margin for human error is still
+                too great, and let's face it, you don't want to sit here and write out 85 individual activities.</p>
+            <p class='part4'>Instead you begin to think that you can make the computer create a list of activities and phi values. It really wouldn't be that hard, you decide to create an object, similar to the journal, which will hold an activity and a phi value, only
+                this time, the activity is the property and the phi is its value. If the activity is already in the object, then don't add it to the object again. You will loop through the journal and add activities to the object, calculate phi, and skipping
+                activities that already exist in the object.</p>
+            <ol>
+                <li>Create a function to gather all the correlations and their activities into an object.</li>
+                <li>Output that list when the button is clicked</li>
+                <li>Narrow down the data to determine the cause of Jacques ailment!!</li>
+            </ol>
+            <div class="displayAllPhi"></div>
+            <br>
+            <div class="btn-group buttons">
+                <button type="button" class="btn btn-dark gatherPhi">Get All Correlations</button>
+            </div>
+            <br>
+            <br>
+            <p class='part4'>Now that's remarkable, and quite a list. Let's narrow this down. We only want those correlations that are close to -1 and 1. So let's write a function to show those correlations that are greater than .1 and less than -.1</p>
+            <div class="displayNarrower"></div>
+            <br>
+            <br>
+            <div class="btn-group buttons">
+                <button type="button" class="btn btn-dark getNarrower">Narrow the Results</button>
+            </div>
+            <br>
+            <br>
+            <p class='part4'>We can see there are two activities that stand out, a strong positive correlation and a strong negative correlation. Let's create a new event and add it to <code>JOURNAL</code> whenever one is true, the strong positive, and the other is false.</p>
+            <div class="displayLastTwo"></div>
+            <br>
+            <div class="btn-group buttons">
+                <button type="button" class="btn btn-dark getLastTwo">The Last Check</button>
+            </div>
+        </div>
+        <hr>
+        <div class='part5'><span class='heading'>PART 5</span>
+            <ol>
+                <p class='part5'>Answer each question in the 'p-tag' provided below each question.</p>
+                <li class='part5'>What did you learn from this activity? Please provide some depth here. Don't respond "how to code ..."</li>
+                <h1>I learned the meaning of arrays and loops from doing this activity. This also taught me how to come up with a solution for every problem.</h1>
+                <p class='part5 response'></p>
+                <li class='part5'>Even though this was a bit farsical, how might an analysis like this be useful in the real world?</li>
+                <h2> This may be useful because you are doing math and problem solving.</h2>
+                <p class='part5 response'></p>
+                <li class='part5'>Reflect on the phrase: "You don't need math to code, but it certainly makes it more helpful."</li>
+                <h3>Math is mainly important in coding because you use Calculus.</h3>
+                <p class='part5 response'></p>
+                <br>
+            </ol>
+
+            <p>When you have answered the questions, please submit this project on your Github and tell Mr. Law you have done so.</p>
+        </div>
+    </body>
+
+</html>
