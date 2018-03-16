@@ -1,0 +1,48 @@
+body {
+    background-repeat: repeat-y;
+    background-size: cover;
+    background-attachment: fixed;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0.7) 100%), url("http://pariedolia.weebly.com/uploads/4/3/6/1/43615323/8964981_orig.jpg");
+    padding: 10%;
+    padding-top: 5%;
+}
+p{
+    line-height: 24px;
+    text-indent: 20px;
+}
+img{
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    background-color: #ffffff;
+}
+
+h1 {
+    font-family:'Rubik Mono One', sans-serif;
+}
+hr{
+    border: none;
+    height: 2px;
+    color: #333; /* old IE */
+    background-color: #333; /* Modern Browsers */
+}
+.heading{
+    text-decoration: underline;
+    font-size: 32px;
+    font-weight: bold;
+}
+.story {
+    font-family:'Kalam', cursive;
+    font-size: 20px;
+}
+.part1, .part2, .part3, .part4, .part5 {
+    font-family:'Boogaloo', cursive;
+    font-size: 24px;
+    line-height: 36px;
+}
+.response{
+    color: rgb(0, 123, 255);
+}
+#firstP {
+    margin-top: 5%;
+}
