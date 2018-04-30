@@ -88,7 +88,6 @@ function init() {
     
     
     scene.start();
-    EPICMUSIC.play();
     box = new Sprite(game, "court.png", 100, 100);
     box.setSpeed(0);
     box.setPosition(game.width/2, game.height/2);
