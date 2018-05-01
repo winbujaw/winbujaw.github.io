@@ -11,18 +11,14 @@
 
         <script>
 
-
 var paddle;
 var paddle2;
-
-
-
 var ball;
 var game;
 var box;
 var character;
 var output;
-
+var CHANGE = 20;
 function checkCollisions() {
     
     if(box.collidesWith(character)){
@@ -33,6 +29,7 @@ function checkCollisions() {
     else{
         output.innerHTML = "NO COLLISON";
         //character.followMouse();
+        
         }
         
         //Distance Collision
@@ -44,16 +41,12 @@ function checkCollisions() {
         character.dy *= -1;
         }else{
         output.innerHTML = dist;
-
         }
-
 }
-
 function Paddle() {
     tPaddle = new Sprite(scene, "court.png", 200, 100);
     tPaddle.setAngle(180);
      tPaddle.setSpeed(0);
-
     tPaddle.checkKeys = function() {
         if (keysDown[K_UP]) {
             this.changeYby(CHANGE);
@@ -61,7 +54,6 @@ function Paddle() {
                 this.setY(this.width / 2);
             }
         }
-
         if (keysDown[K_DOWN]) {
             this.changeYby(-CHANGE);
             if (this.y + this.width / 2 > scene.height) {
@@ -69,15 +61,14 @@ function Paddle() {
             }
         }
     }
-
     return tPaddle
 }
-
-
 function init() {
-    
+      
+   
     
     scene = new Scene();
+    scene.hideCursor();
     scene.setSize(600,300);
     paddle = new Paddle();
     paddle2 = new Paddle();
@@ -88,11 +79,12 @@ function init() {
         this.setX(document.mouseX);
         this.setY(document.mouseY);
     }*/
+   
     paddle.setPosition(15, scene.height / 2);
     paddle2.setPosition(scene.width - 20, scene.height / 2);
-    ball = new Sprite(scene, "ball.png" ,100, 100);
-    ball.setMoveAngle(60);
-    ball.setSpeed(8);
+    ball = new Sprite(scene, "ball.png" ,200, 200);
+    
+   ball.setSpeed(8);
     ball.setBoundAction(BOUNCE);
     /*character.followMouse = function(){
         this.setX(document.mouseX);
@@ -101,34 +93,35 @@ function init() {
     
     
     scene.start();
-    EPICMUSIC.play();
-    box = new Sprite(game, "court.png", 100, 100);
-    box.setSpeed(0);
-    box.setPosition(game.width/2, game.height/2);
+    
+    paddle = new Sprite(game, "court.png", 100, 100);
+    paddle.setSpeed(0);
+    
     
     
     character.setSpeed(5);
-    character.setMoveAngle(30);
+    character.setMoveAngle(60);
     character.setBoundAction(BOUNCE);
   
     
+    output = document.getElementById("output")
     
     
-    
-    game.start();
+   
 }
-
-
-
 function update() {
-    
     scene.clear();
+    ball.update();
     paddle.checkKeys();
     
     paddle2.update();
     paddle.update();
-    ball.update();
+    
+    
     checkCollisions();
+    //character.followMouse();
+
+  
 }
         </script>
     </head>
