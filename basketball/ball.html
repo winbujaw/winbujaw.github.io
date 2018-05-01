@@ -120,13 +120,12 @@ function init() {
 
 
 function update() {
+     character.update();
+    ball.update();
     paddle.checkKeys();
     scene.clear();
     paddle.update();
     paddle2.update();
-    
-    ball.update();
-    character.update();
     checkCollisions();
     //character.followMouse();
 }
