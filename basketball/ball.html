@@ -47,14 +47,14 @@ function Paddle() {
      tPaddle.setSpeed(0);
 
     tPaddle.checkKeys = function() {
-        if (keysDown[K_UP]) {
+        if (keysDown[K_DOWN]) {
             this.changeYby(CHANGE);
             if (this.y - this.width / 2 < 0) {
                 this.setY(this.width / 2);
             }
         }
 
-        if (keysDown[K_DOWN]) {
+        if (keysDown[K_UP]) {
             this.changeYby(-CHANGE);
             if (this.y + this.width / 2 > scene.height) {
                 this.setY(scene.height - this.width / 2);
@@ -118,7 +118,7 @@ function init() {
 
 function update() {
     game.clear();
-    paddle.checkKeys();
+    tPaddle.checkKeys();
     ball.update();
     
     paddle.update();
