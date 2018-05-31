@@ -62,7 +62,7 @@ function Fly() {
 
 
 function Fire() {
-    tFire = new Sprite(game, "https://orig00.deviantart.net/1fad/f/2012/146/0/b/fire_ball_png_by_dbszabo1-d515um9.png", 40, 40);
+    tFire = new Sprite(game, "http://www.imarvintpa.com/Mapping/Overlays/Effects/Fire/Fireball/Fireball1_GD.png", 40, 40);
     tFire.setSpeed(10);
     tFire.wriggle = function() {
         newDir = (Math.random() * 90) - 45;
@@ -172,7 +172,7 @@ function init() {
     game = new Scene();
     gui = document.getElementById('gui');
 
-    starfield = new Sprite(game, 'http://d2a0do11gpvbrl.cloudfront.net/sites/default/files/field/image/6-dubai1.jpg', 1400, 1000);
+    starfield = new Sprite(game, 'http://www.wsllpaper.com/wp-content/uploads/2014/03/skyscrapers-above-the-clouds-hd-desktop-wallpaper.jpg', 1400, 1000);
 
     ship = new Ship();
     timer = new Timer();
