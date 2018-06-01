@@ -9,7 +9,7 @@ var ribbit;
 var score = 0;
 var NUMFLIES = 3;
 var NUMFIREBALLS = 3;
-var MAXTIME = 120;
+var MAXTIME = 40;
 var fireballs;
 var flies;
 var fly;
