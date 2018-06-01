@@ -1,3 +1,9 @@
 #reset{
     top: 450px;
 }
+body {
+    background-image: url("https://www.publicdomainpictures.net/pictures/40000/velka/fluffy-clouds.jpg");
+}
+.sidebar {
+    color:white;
+}
